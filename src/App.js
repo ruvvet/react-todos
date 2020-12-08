@@ -5,8 +5,8 @@ import ListItem from './components/ListItem'
 
 const toDoList = [{priority: 1, thing: "Shower"}, {priority: 2, thing:"brush teeth"}, {priority: 5, thing:"hello"}]
 
-const printToDo = toDoList.map(todo =>{
-  return <li><ListItem priority={todo.priority} thing={todo.thing} /></li>
+const printToDo = toDoList.map((todo, index) =>{
+  return <li><ListItem priority={todo.priority} thing={todo.thing} key={index}/></li>
 })
 
 
