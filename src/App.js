@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import ListItem from './components/ListItem'
+
+
+const toDoList = [{priority: 1, thing: "Shower"}, {priority: 2, thing:"brush teeth"}, {priority: 5, thing:"hello"}]
+
+const printToDo = toDoList.map(todo =>{
+  return <li><ListItem priority={todo.priority} thing={todo.thing} /></li>
+})
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="newClass">
+    <header>My List</header>
+    <div>
+      <ul>
+     {printToDo}
+      </ul>
     </div>
+  </div>
   );
 }
 
