@@ -10,8 +10,8 @@ function App() {
     { priority: 5, thing: 'hello' },
   ]);
 
-  const [prio, newprio] = useState('');
-  const [todo, newtodo] = useState('');
+  const [prio, newprio] = useState();
+  const [todo, newtodo] = useState();
 
   const clearList = () => {
     const deletefirst = toDoList.splice(1, toDoList.length - 1);
