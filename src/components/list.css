@@ -1,0 +1,18 @@
+.todolist{
+    display: block flex;
+    align-items: baseline;
+    list-style: none;
+}
+
+.todoitem{
+    font-size: 30px;
+}
+
+.prio, .checkbox, .delete{
+    width: 30px;
+    height: 30px;
+}
+
+.strikethrough{
+    text-decoration: line-through;
+}
