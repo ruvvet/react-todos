@@ -80,3 +80,9 @@ function App() {
 }
 
 export default App;
+
+
+// Having a checkbox in front of every TODO. When checking this box, it should strike through the text. If you uncheck it should list it normally.
+// Have a numeric input in front of the TODO item, which you can change, and then re-sorts the list based on priority
+// Have a delete or X button at the end of every TODO item that deletes that specific item
+// Have a CLEAR ALL that actually clears all :wink:
